@@ -1,8 +1,8 @@
 body{
-    // width: 100vw;
+    width: 100vw;
 
     display: grid;
-    grid-template-rows: 100px 600px 300px;
+    grid-template-rows: 100px 600px 300px 100px 30px;
 
     margin: 0;
     padding: 0;
@@ -12,19 +12,20 @@ header{
     background-color: white;
     #logo{
         margin: 19px;
-        margin-left: 70px;
+        margin-left: 10%;
+        cursor: pointer; 
     }
     #navbar{
         display: flex;
         float: right;
         align-items: center;
         height: 100px;
-        gap: 40px;
+        gap: 50px;
         margin-right: 20px;
         #language{
             text-align: center;
-            width: 90px;
-            height: 25px;
+            width: 100px;
+            height: 30px;
             border: 0.5px solid black;
             border-radius: 30px;
             font-size: 11px;
@@ -44,17 +45,110 @@ header{
     color: rgb(133, 85, 15);
 }
 
+#himg{
+    height: 600px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    object-fit: cover;
+}
+#bookingbutton{
+    position: absolute; 
+    top: 65%; 
+    left: 10%;
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #3D3738;
+    color: white;
+    font-family: robotoo;   
+    font-size: 20px;
+    border-radius: 50px;
+    height: 65px;
+    width: 200px;
+    cursor: pointer; 
+    transition: 0.3s;
+}
+#title1{
+    position: absolute; 
+    top: 20%; 
+    left: 10%;
+    z-index: 2;
+    font-size: 71px;
+    color: #3D3738;
+    font-weight: bold;
+    max-width: 600px;
+}
+#description1{
+    position: absolute; 
+    top: 40%; 
+    left: 10%;
+    z-index: 2;
+    width: 550px;
+    color: #3D3738;
+    font-size: 20px;
+}
+
+#bookingbutton:hover{
+    background-color: rgb(221, 127, 127);
+}
+
+
 #salon{
-    margin-left: 300px;
-    margin-right: 300px;
     text-align: center;
+    max-width: 600px;
+    align-content: center;
+    margin: auto;
     #title{
-        font-size: 50px;
+        font-size: 40px;
+        color: #3D3738;
     }
     #description{
-        width: 600px;
+        font-size: 16px;
+        color: #454343d1;
+        font-family: serif;
     }
 }
+footer{
+    background-color: white;
+    border-top: 0.1px solid #3d373847;
+    // display: flex;
+    #logo1{
+        margin: 19px;
+        margin-left: 10%;
+    }
+    #navbar1{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        gap: 100px;
+        margin-top: 10px;
+        margin-right: 100px;
+        float: right;
+    }
+}
+#copyright{
+    
+    #hr{
+        margin-left: 10%;
+        text-align: center;
+        height: 0.1px;
+        width: 925px;
+        background-color: #3d37388e;
+    }
+    #c{
+        float: left;
+        margin-left: 10%;
+        font-size: 15px;
+        color: #3d37387e;
+    }
+    #rights{
+        float: right;
+        margin-right: 18%;
+        font-size: 15px;
+        color: #3d37387e;
+    }
+}
+
 
 @font-face {
     font-family: 'Robotoo'; 
