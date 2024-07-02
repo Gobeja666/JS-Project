@@ -1,0 +1,62 @@
+body{
+    // width: 100vw;
+
+    display: grid;
+    grid-template-rows: 100px 600px 300px;
+
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: white;
+    #logo{
+        margin: 19px;
+        margin-left: 70px;
+    }
+    #navbar{
+        display: flex;
+        float: right;
+        align-items: center;
+        height: 100px;
+        gap: 40px;
+        margin-right: 20px;
+        #language{
+            text-align: center;
+            width: 90px;
+            height: 25px;
+            border: 0.5px solid black;
+            border-radius: 30px;
+            font-size: 11px;
+            margin-right: 70px;
+        }
+    }
+}
+
+.but{
+    text-decoration: none;
+    font-family: Robotoo;
+    font-size: 16px;
+    color: black;
+    transition: color 0.2s ease;
+}
+.but:hover {
+    color: rgb(133, 85, 15);
+}
+
+#salon{
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    #title{
+        font-size: 50px;
+    }
+    #description{
+        width: 600px;
+    }
+}
+
+@font-face {
+    font-family: 'Robotoo'; 
+    src: url('../../assets/Fonts/Roboto.ttf') format('truetype'); 
+}

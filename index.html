@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/Home/style.css">
+    <link rel="icon" href="./assets/Incons/icon.png" type="image/x-icon">
     <title>Hair Salon - Js Project</title>
 </head>
 <body>
 
     <header>
-        <img src="assets/logo.png" alt="logo" height="80px">
+        <img src="assets/Incons/logo.png" alt="logo" height="63px" id="logo">
         <nav id="navbar">
-            <a id="about" href="index.html"></a>
-            <a id="contact" href="index.html"></a>
-            <a id="gallery" href="index.html"></a>
-            <a id="services" href="index.html"></a>
-            <a id="login_register" href="index.html"></a>
-
+            <a id="about" href="index.html" class="but"></a>
+            <a id="contact" href="index.html" class="but"></a>
+            <a id="gallery" href="index.html" class="but"></a>
+            <a id="services" href="index.html" class="but"></a>
+            <a id="login_register" href="index.html" class="but"></a>
+            <select id="language">
+                <option value="En" >🇺🇸 English</option>
+                <option value="Geo">🇬🇪 ქართული</option>
+            </select>
         </nav>
     </header>
+    <section>
+        <img src="assets/Photos/HomePageImg.jpeg" alt="Home Page Img" height="600px">
+    </section>
+    <section id="salon">
+        <div id="title">Visit our salon to experience the<br> sense of beauty and style!</div>
+        <div id="description">Parfois is a luxury hair salon strives to create works of art applying the latest trends in hair styling, design, and coloring for both men and women at fine prices. We are committed to improving your natural beauty with every visit.</div>
+    </section>
 
+
+
+
+    <script>
+        document.getElementById("language").onchange = function() {
+            ChangeLang();
+        };
+    </script>
 </body>
 <script src="./scripts/main.js"></script>
 </html>
