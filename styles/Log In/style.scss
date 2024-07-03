@@ -1,0 +1,125 @@
+body{
+    width: 100vw;
+
+    display: grid;
+    grid-template-rows: 100px 600px 100px 30px;
+
+    margin: 0;
+    padding: 0;
+
+    background-image: url(/assets/Photos/bg.png);
+    font-size: 16px;
+    font-family: robotoo;
+}
+
+header{
+    background-color: white;
+    #logo{
+        margin: 19px;
+        margin-left: 10%;
+        cursor: pointer; 
+    }
+    #navbar{
+        display: flex;
+        float: right;
+        align-items: center;
+        height: 100px;
+        gap: 50px;
+        margin-right: 20px;
+        #language{
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            border: 0.5px solid black;
+            border-radius: 30px;
+            font-size: 11px;
+            margin-right: 70px;
+        }
+    }
+}
+
+.but{
+    text-decoration: none;
+    font-family: Robotoo;
+    font-size: 16px;
+    color: black;
+    transition: color 0.2s ease;
+}
+.but:hover {
+    color: rgb(133, 85, 15);
+}
+
+
+#login{
+    display: none;
+    background-color: white;
+    border-radius: 10%;
+    justify-content: center;
+    width: 570px;
+    height: 453px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    #loginForm{
+        text-align: center;
+        #loginB{
+            background-color: #3D3738;
+            color: white;
+            cursor: pointer;
+        }
+        #createAc{
+            background-color: #3D3738;
+            color: white;
+            cursor: pointer;
+            width: 250px;
+        }
+    }
+    
+}
+.inpt{
+    width: 390px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: #b3b3b389;
+}
+.inpt2{
+    width: 390px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: #b3b3b389;
+}
+
+#register{
+    display: block;
+    background-color: white;
+    border-radius: 10%;
+    justify-content: center;
+    width: 570px;
+    height: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+#strength {
+    font-size: 16px;
+    font-family: robotoo;
+}
+
+
+
+@font-face {
+    font-family: 'Robotoo'; 
+    src: url('../../assets/Fonts/Roboto.ttf') format('truetype'); 
+}

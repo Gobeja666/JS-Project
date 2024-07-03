@@ -77,3 +77,6 @@ function ChangeLang(){
     }
 
 }
+bookingbutton.addEventListener(`click`, function(){
+    window.location.href = `/pages/contacts.html`
+})

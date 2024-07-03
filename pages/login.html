@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/Incons/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/Log In/style.css">
+    <title>LogIn Page - Js Project</title>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html">
+            <img src="../assets/Incons/logo.png" alt="logo" height="63px" id="logo" >
+        </a>
+        <nav id="navbar">
+            <a id="about" href="index.html" class="but">About</a>
+            <a id="contact" href="index.html" class="but">Contacts</a>
+            <a id="gallery" href="index.html" class="but">Gallery</a>
+            <a id="services" href="index.html" class="but">Services</a>
+            <a id="login_register" href="pages/login.html" class="but">Log In</a>
+            <select id="language">
+                <option value="En" >🇺🇸 English</option>
+                <option value="Geo">🇬🇪 ქართული</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <div id="login">
+            <form id="loginForm">
+                <input type="email" id="email" class="inpt" placeholder="Email"><br>
+                <input type="password" id="password" class="inpt" placeholder="Password"><br>
+                <input type="button" value="Log In" id="loginB" class="inpt"><br>
+                <input type="button" value="Create a new account" id="createAc" class="inpt" onclick="idk()"><br>
+            </form>
+        </div>
+
+        <div id="register">
+            <form id="registerForm">
+                <input type="email" class="inpt2" id="email1" placeholder="Email" style="margin-top: 50px;"><br>
+
+                <input type="password" class="inpt2" id="password1" placeholder="Password"><br>
+
+                <input type="password" class="inpt2" id="rpassword" placeholder="Repeat Password"><br>
+
+                <div id="strength" class="strength" style="margin-top: 20px;">Strength: </div>
+
+                Enter Register Date: <input type="date" id="date" style="margin-top: 20px;"><br>
+
+                <input type="text" class="inpt2" id="name" placeholder="Name and surname"><br>
+
+                <input type="text" class="inpt2" id="country" placeholder="country"><br>
+
+                <input type="text" class="inpt2" id="city" placeholder="City"><br>
+
+                <input type="number"  id="number" class="inpt2" placeholder="Number"><br>
+
+                <input type="submit" value="register">
+            </form>
+        </div>
+
+    </main>
+
+
+
+
+    <script>
+        document.getElementById("language").onchange = function() {
+            ChangeLang();
+        };
+    </script>    
+    <script src="../scripts/login.js"></script>
+</body>
+</html>
