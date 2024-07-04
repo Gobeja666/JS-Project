@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/Incons/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/Contacts/style.css">
     <title>Contacts page - Js Project</title>
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+            <img src="../assets/Incons/logo.png" alt="logo" height="63px" id="logo" >
+        </a>
+        <nav id="navbar">
+            <a id="about" href="../pages/about.html" class="but">About</a>
+            <a id="contact" href="#" class="but">Contacts</a>
+            <a id="gallery" href="../pages/gallery.html" class="but">Gallery</a>
+            <a id="services" href="../pages/services.html" class="but">Services</a>
+            <a id="login_register" href="../pages/login.html" class="but">Log In</a>
+            <select id="language">
+                <option value="En" >🇺🇸 English</option>
+                <option value="Geo">🇬🇪 ქართული</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contacts">
+            <div id="title" style="font-size: 40px; font-weight: bold; " class="a">Contacts Us </div>
+            <div id="desc" style="font-size: 16px; " class="a">Book an appointment via form or phone</div>
+            <div id="addres" style="font-size: 25px; font-weight: bold;" class="a">Address:</div><div style="font-size: 16px; " class="a">  243 Divisadero St, San Francisco, CA</div>
+            <div id="hours" style="font-size: 25px; font-weight: bold;" class="a">Hours Monday</div><div style="font-size: 16px; " class="a"> - Saturday: 11am-9pm  Sunday: 11am-7pm</div>
+            <div id="cont" style="font-size: 25px; font-weight: bold;" class="a">Contacts:</div><div style="font-size: 16px; " > email@mail.com</div>
+        </div>
+        <div id="contact11">
+            <input type="text" placeholder="Full Name" class="b"><br>
+            <input type="number" placeholder="Phone number" class="b"><br>
+            <input type="email" placeholder="email" class="b"><br>
+            <input type="text" placeholder="Specify the service you are intersted in" class="b"><br>
+            <input type="text" placeholder="Type Your text" class="b" style="height: 120px;"><br>
+            <input type="submit" class="b">
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="../assets/Incons/logo.png" alt="logo" height="63px" id="logo1">
+        <nav id="navbar1">
+            <a id="about1" href="index.html" class="but">About</a>
+            <a id="contact1" href="index.html" class="but">Contacts</a>
+            <a id="gallery1" href="index.html" class="but">gallery</a>
+            <a id="services1" href="index.html" class="but">Services</a>
+            <a id="login_register1" href="index.html" class="but">Log In</a>
+        </nav>
+    </footer>
+
+    <section id="copyright" style="background-color: white;">
+        <div id="c">© Created by Luka Gobejishvili</div>
+    </section>
+
+    <script>
+        document.getElementById("language").onchange = function() {
+            ChangeLang();
+        };
+    </script>
+    <script src="../scripts/contacts.js"></script>
 </body>
 </html>

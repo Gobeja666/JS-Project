@@ -1,0 +1,135 @@
+body{
+    width: 100vw;
+
+    display: grid;
+    grid-template-rows: 100px 600px 100px 30px;
+
+    margin: 0;
+    padding: 0;
+
+    background-image: url(/assets/Photos/bg.png);
+
+}
+
+header{
+    background-color: white;
+    #logo{
+        margin: 19px;
+        margin-left: 10%;
+        cursor: pointer; 
+    }
+    #navbar{
+        display: flex;
+        float: right;
+        align-items: center;
+        height: 100px;
+        gap: 50px;
+        margin-right: 20px;
+        #language{
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            border: 0.5px solid black;
+            border-radius: 30px;
+            font-size: 11px;
+            margin-right: 70px;
+        }
+    }
+}
+
+.but{
+    text-decoration: none;
+    font-family: Robotoo;
+    font-size: 16px;
+    color: black;
+    transition: color 0.2s ease;
+}
+.but:hover {
+    color: rgb(133, 85, 15);
+}
+
+
+#contacts{
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 30px;
+    top: 20%;
+    left: 10%;
+    .a{
+        margin-top: 10px;
+        color: #3D3738;
+    }
+}
+#contact11{
+    position: relative;
+    left: 50%;
+    top: -40%;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+}
+
+.b{
+    width: 400px;
+    height: 40px;
+    border: none;
+    background-color: #9e9a9a7a;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 16px;
+    padding-left: 10px;
+}
+
+
+
+footer{
+    background-color: white;
+    border-top: 0.1px solid #3d373847;
+    #logo1{
+        margin: 19px;
+        margin-left: 10%;
+    }
+    #navbar1{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        gap: 100px;
+        margin-top: 10px;
+        margin-right: 50px;
+        float: right;
+    }
+}
+#copyright{
+    
+    #hr{
+        margin-left: 10%;
+        text-align: center;
+        height: 0.1px;
+        width: 925px;
+        background-color: #3d37388e;
+    }
+    #c{
+        float: left;
+        margin-left: 10%;
+        font-size: 15px;
+        color: #3d37387e;
+    }
+    #rights{
+        float: right;
+        margin-right: 18%;
+        font-size: 15px;
+        color: #3d37387e;
+    }
+}
+
+@font-face {
+    font-family: 'Robotoo'; 
+    src: url('../../assets/Fonts/Roboto.ttf') format('truetype'); 
+}
