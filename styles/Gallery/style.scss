@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+
+  header{
+    background-color: white;
+    height: 100px;
+    #logo{
+        margin: 19px;
+        margin-left: 10%;
+        cursor: pointer; 
+    }
+    #navbar{
+        display: flex;
+        float: right;
+        align-items: center;
+        height: 100px;
+        gap: 50px;
+        margin-right: 20px;
+        #language{
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            border: 0.5px solid black;
+            border-radius: 30px;
+            font-size: 11px;
+            margin-right: 70px;
+        }
+    }
+}
+
+.but{
+    text-decoration: none;
+    font-family: Robotoo;
+    font-size: 16px;
+    color: black;
+    transition: color 0.2s ease;
+}
+.but:hover {
+    color: rgb(133, 85, 15);
+}
+
+  
+  .slider {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    max-width: 600px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

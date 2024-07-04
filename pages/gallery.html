@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery page - Js Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/Incons/icon.png" type="image/x-icon">
+  <title>Gallery page - Js project</title>
+  <link rel="stylesheet" href="../styles/Gallery/style.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+            <img src="../assets/Incons/logo.png" alt="logo" height="63px" id="logo" >
+        </a>
+        <nav id="navbar">
+            <a id="about" href="../pages/about.html" class="but">About</a>
+            <a id="contact" href="../pages/contacts.html" class="but">Contacts</a>
+            <a id="gallery" href="../pages/gallery.html" class="but">Gallery</a>
+            <a id="services" href="../pages/services.html" class="but">Services</a>
+            <a id="login_register" href="#" class="but">Log In</a>
+            <select id="language">
+                <option value="En" >🇺🇸 English</option>
+                <option value="Geo">🇬🇪 ქართული</option>
+            </select>
+        </nav>
+    </header>
+
+
+
+  <div class="slider">
+    <div class="slides">
+      <img src="../assets/Incons/icon.png" alt="Image 1">
+      <img src="../assets/Incons/logo.png" alt="Image 2">
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+  <script src="../scripts/gallery.js"></script>
 </body>
 </html>
