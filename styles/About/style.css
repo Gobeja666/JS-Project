@@ -1,0 +1,114 @@
+body {
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 100px 600px 100px 30px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+}
+header #logo {
+  margin: 19px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+header #navbar {
+  display: flex;
+  float: right;
+  align-items: center;
+  height: 100px;
+  gap: 50px;
+  margin-right: 20px;
+}
+header #navbar #language {
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  border: 0.5px solid black;
+  border-radius: 30px;
+  font-size: 11px;
+  margin-right: 70px;
+}
+
+.but {
+  text-decoration: none;
+  font-family: Robotoo;
+  font-size: 16px;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.but:hover {
+  color: rgb(133, 85, 15);
+}
+
+main {
+  background-color: rgb(238, 233, 232);
+}
+main #bimg {
+  float: right;
+}
+main #title {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 2;
+  font-size: 40px;
+  color: #3D3738;
+  max-width: 650px;
+  font-weight: bold;
+}
+main #description {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  z-index: 2;
+  width: 550px;
+  color: #3D3738;
+  font-size: 20px;
+}
+
+footer {
+  background-color: white;
+  border-top: 0.1px solid rgba(61, 55, 56, 0.2784313725);
+}
+footer #logo1 {
+  margin: 19px;
+  margin-left: 10%;
+}
+footer #navbar1 {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 100px;
+  margin-top: 10px;
+  margin-right: 50px;
+  float: right;
+}
+
+#copyright #hr {
+  margin-left: 10%;
+  text-align: center;
+  height: 0.1px;
+  width: 925px;
+  background-color: rgba(61, 55, 56, 0.5568627451);
+}
+#copyright #c {
+  float: left;
+  margin-left: 10%;
+  font-size: 15px;
+  color: rgba(61, 55, 56, 0.4941176471);
+}
+#copyright #rights {
+  float: right;
+  margin-right: 18%;
+  font-size: 15px;
+  color: rgba(61, 55, 56, 0.4941176471);
+}
+
+@font-face {
+  font-family: "Robotoo";
+  src: url("../../assets/Fonts/Roboto.ttf") format("truetype");
+}/*# sourceMappingURL=style.css.map */

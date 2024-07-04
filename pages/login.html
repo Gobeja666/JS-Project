@@ -32,7 +32,7 @@
                 <input type="email" id="email" class="inpt" placeholder="Email"><br>
                 <input type="password" id="password" class="inpt" placeholder="Password"><br>
                 <input type="button" value="Log In" id="loginB" class="inpt"><br>
-                <input type="button" value="Create a new account" id="createAc" class="inpt" onclick="idk()"><br>
+                <input type="button" value="Create a new account" id="createAc" class="inpt" onclick="change()"><br>
             </form>
         </div>
 
@@ -46,7 +46,7 @@
 
                 <div id="strength" class="strength" style="margin-top: 20px;">Strength: </div>
 
-                Enter Register Date: <input type="date" id="date" style="margin-top: 20px;"><br>
+                <input type="date" id="date" style="margin-top: 20px;"><br>
 
                 <input type="text" class="inpt2" id="name" placeholder="Name and surname"><br>
 
@@ -56,7 +56,9 @@
 
                 <input type="number"  id="number" class="inpt2" placeholder="Number"><br>
 
-                <input type="submit" value="register">
+                <input type="submit" value="register" class="inpt" id="sub"><br><br>
+
+                <div id="already">Already have an account?</div> <button onclick="change1()" id="lgn">Login here</button>
             </form>
         </div>
 

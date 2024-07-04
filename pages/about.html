@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../assets/Incons/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/About/style.css">
+    <title>About page - Js Project</title>
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+            <img src="../assets/Incons/logo.png" alt="logo" height="63px" id="logo" >
+        </a>
+        <nav id="navbar">
+            <a id="about" href="#" class="but">About</a>
+            <a id="contact" href="../pages/contacts.html" class="but">Contacts</a>
+            <a id="gallery" href="../pages/gallery.html" class="but">Gallery</a>
+            <a id="services" href="../pages/services.html" class="but">Services</a>
+            <a id="login_register" href="../pages/login.html" class="but">Log In</a>
+            <select id="language">
+                <option value="En" >🇺🇸 English</option>
+                <option value="Geo">🇬🇪 ქართული</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <img src="../assets/Photos/aboutbg.jpeg" alt="About Page Img" id="bimg" style="z-index: 1;" height="600px">
+        <div id="title">Visit one of our salons and treat yourself to the beauty, style, and perfection</div>
+        <div id="description">Parfois is a luxury hair salon practicing the art of beautiful hair and offering modern hair styling, coloring, and cutting services for men and women at very affordable prices. We strive to enhance your natural beauty with every visit.<p>So if you want to have a totally new appearance, make a modern haircut, or change your hair color, our stylists will design your look and style that suits your needs.</p></div>
+    </main>
+
+    <footer>
+        <img src="../assets/Incons/logo.png" alt="logo" height="63px" id="logo1">
+        <nav id="navbar1">
+            <a id="about1" href="index.html" class="but">About</a>
+            <a id="contact1" href="index.html" class="but">Contacts</a>
+            <a id="gallery1" href="index.html" class="but">gallery</a>
+            <a id="services1" href="index.html" class="but">Services</a>
+            <a id="login_register1" href="index.html" class="but">Log In</a>
+        </nav>
+    </footer>
+
+    <section id="copyright">
+        <div id="c">© Created by Luka Gobejishvili</div>
+    </section>
+
+    <script>
+        document.getElementById("language").onchange = function() {
+            ChangeLang();
+        };
+    </script>
+    <script src="../scripts/about.js"></script>
 </body>
 </html>
